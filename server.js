@@ -18,14 +18,8 @@ app.use(cors()); // Use this after the variable declaration
 
 app.use(express.json()); // tell the server to accept the json data from frontend
 
-//static file access
-app.use(express.static(path.join(__dirname, "./client/build")));
 //Signup and login
 app.use("/email", emailRoutes);
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
 
 const PORT = process.env.PORT || 8000; // Default port if not defined
 app.listen(PORT, () => {
