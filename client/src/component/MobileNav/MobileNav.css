@@ -1,0 +1,45 @@
+.mobile-nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.mobile-nav-header{
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+    padding: 8px;
+    padding-bottom: 10px;
+}
+
+.mobile-nav-header .mobile-nav-icon{
+    cursor: pointer;
+}
+
+.mobile-nav-title{
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+.mobile-nav .nav-items{
+    background-color: #393E46;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    color: #EEEEEE;
+}
+
+.mobile-nav .nav-items .nav-link{
+    padding-top: 20px;
+}
+
+@media (min-width: 600px){
+    .mobile-nav{
+        display: none;
+    }
+}

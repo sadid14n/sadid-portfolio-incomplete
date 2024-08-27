@@ -1,0 +1,53 @@
+.techstack{
+    padding-left: 140px;
+    margin: 40px 0px;
+}
+
+.techstack hr{
+    width: 400px;
+    color: #00ADB5;
+    margin: 10px auto;
+}
+.techstack h2{
+    font-weight: bold;
+    color: #00ADB5;
+    font-family: cursive;
+}
+
+.techstack .card{
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.techstack .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 700ms;
+}
+
+.techstack .tech-icon{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+
+/* ===== DARK MODE STYLE ===== */
+
+#dark .card{
+    background-color: #00ADB5;
+    color: #EEEEEE;
+}
+
+/* ==== Mobile Design ===== */
+@media (max-width: 600px) {
+    .techstack{
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .techstack h2{
+        padding-top: 20px;
+    }
+    .techstack hr{
+        width: 200px;
+    }
+}
+

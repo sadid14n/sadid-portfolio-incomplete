@@ -1,0 +1,50 @@
+.about{
+    margin: 30px 0px;
+    margin-left: 150px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.about-img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text h1{
+    color: #138781;
+    font-family: cursive;
+    border-bottom: 2px solid #138781;
+    text-align: center;
+}
+
+.about-text p{
+    text-align: justify;
+    padding: 20px;
+}
+
+/* ===== Mobile Design ===== */
+@media (max-width: 600px) {
+    .about{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about h1{
+        margin-top: 10px;
+        font-size: 26px;
+    }
+
+    .about img{
+        padding: 20px 20px;
+    }
+    
+}
